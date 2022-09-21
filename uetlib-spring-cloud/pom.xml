@@ -5,7 +5,7 @@
     <parent>
         <artifactId>backend-jvm-lib</artifactId>
         <groupId>ch.ubique</groupId>
-        <version>0.4.28-SNAPSHOT</version>
+        <version>0.4.35-SNAPSHOT</version>
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
