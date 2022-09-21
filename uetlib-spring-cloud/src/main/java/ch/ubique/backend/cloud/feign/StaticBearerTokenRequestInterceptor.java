@@ -2,8 +2,7 @@ package ch.ubique.backend.cloud.feign;
 
 import feign.RequestTemplate;
 
-public class StaticBearerTokenRequestInterceptor
-        extends BearerTokenRequestInterceptor {
+public class StaticBearerTokenRequestInterceptor extends BearerTokenRequestInterceptor {
 
     private final String bearerTokenValue;
 
