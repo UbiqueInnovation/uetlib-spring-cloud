@@ -1,15 +1,15 @@
 package ch.ubique.backend.cloud.security;
 
+import java.time.Instant;
+import java.util.List;
+import java.util.Objects;
+import java.util.Optional;
+import java.util.function.Function;
+import java.util.function.Supplier;
 import org.springframework.security.access.AccessDeniedException;
 import org.springframework.security.authentication.BadCredentialsException;
 import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.security.oauth2.jwt.Jwt;
-
-import java.time.Instant;
-import java.util.List;
-import java.util.Optional;
-import java.util.function.Function;
-import java.util.function.Supplier;
 
 @SuppressWarnings("unused")
 public class JwtUtil {
@@ -141,7 +141,7 @@ public class JwtUtil {
 
     private static <T> T notNullOrFallback(
             final T claimValue, final Supplier<T> fallbackClaimSupplier) {
-        return Optional.ofNullable(claimValue).orElseGet(fallbackClaimSupplier);
+        return Objects.requireNonNullElseGet(claimValue, fallbackClaimSupplier);
     }
 
     private static Long claimAsLong(final Object claimObject) {
@@ -149,7 +149,7 @@ public class JwtUtil {
             return claimObject instanceof String claim
                     ? Long.parseLong(claim)
                     : ((Number) claimObject).longValue();
-        } catch (NullPointerException | NumberFormatException exception) {
+        } catch (final NullPointerException | NumberFormatException exception) {
             return null;
         }
     }
@@ -159,7 +159,7 @@ public class JwtUtil {
             return claimObject instanceof String claim
                     ? Double.parseDouble(claim)
                     : ((Number) claimObject).doubleValue();
-        } catch (NullPointerException | NumberFormatException exception) {
+        } catch (final NullPointerException | NumberFormatException exception) {
             return null;
         }
     }
