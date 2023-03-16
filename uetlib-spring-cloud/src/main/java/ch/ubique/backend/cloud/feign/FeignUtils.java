@@ -1,10 +1,13 @@
 package ch.ubique.backend.cloud.feign;
 
 import com.pivovarit.function.exception.WrappedException;
+
 import feign.Response;
+
+import org.springframework.util.StreamUtils;
+
 import java.io.IOException;
 import java.nio.charset.Charset;
-import org.springframework.util.StreamUtils;
 
 @SuppressWarnings("unused")
 public class FeignUtils {
