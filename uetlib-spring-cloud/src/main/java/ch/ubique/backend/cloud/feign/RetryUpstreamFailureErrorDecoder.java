@@ -13,7 +13,7 @@ import java.util.Set;
  * just by default on {@link java.io.IOException}.
  */
 @SuppressWarnings("unused")
-public class Retry50xErrorDecoder implements ErrorDecoder {
+public class RetryUpstreamFailureErrorDecoder implements ErrorDecoder {
 
     @Override
     public Exception decode(final String methodKey, final Response response) {
