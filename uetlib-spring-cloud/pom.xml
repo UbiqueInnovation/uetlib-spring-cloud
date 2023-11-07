@@ -46,10 +46,6 @@
             <artifactId>spring-cloud-starter-openfeign</artifactId>
             <exclusions>
                 <exclusion>
-                    <groupId>org.bouncycastle</groupId>
-                    <artifactId>bcpkix-jdk18on</artifactId>
-                </exclusion>
-                <exclusion>
                     <groupId>commons-io</groupId>
                     <artifactId>commons-io</artifactId>
                 </exclusion>
