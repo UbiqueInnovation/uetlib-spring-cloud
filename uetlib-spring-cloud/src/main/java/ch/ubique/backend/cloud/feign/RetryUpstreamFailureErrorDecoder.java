@@ -27,7 +27,7 @@ public class RetryUpstreamFailureErrorDecoder implements ErrorDecoder {
                     httpStatus.value(),
                     httpStatus.getReasonPhrase(),
                     response.request().httpMethod(),
-                    null,
+                    (Long) null,
                     response.request());
         }
         return new Default().decode(methodKey, response);
