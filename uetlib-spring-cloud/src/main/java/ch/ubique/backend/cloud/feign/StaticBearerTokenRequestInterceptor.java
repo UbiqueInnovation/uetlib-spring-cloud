@@ -2,6 +2,7 @@ package ch.ubique.backend.cloud.feign;
 
 import feign.RequestTemplate;
 
+@SuppressWarnings("unused")
 public class StaticBearerTokenRequestInterceptor implements BearerTokenRequestInterceptor {
 
     private final String bearerTokenValue;
