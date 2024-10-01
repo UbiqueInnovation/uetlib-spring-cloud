@@ -10,7 +10,7 @@ import java.io.IOException;
 import java.nio.charset.Charset;
 
 @SuppressWarnings("unused")
-public class FeignUtils {
+public final class FeignUtils {
 
     private FeignUtils() {}
 
