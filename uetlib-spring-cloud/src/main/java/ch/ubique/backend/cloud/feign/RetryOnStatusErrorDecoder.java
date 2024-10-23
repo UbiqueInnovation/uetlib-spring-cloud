@@ -15,8 +15,8 @@ import java.util.Set;
 
 /**
  * Add this as a bean to a feign configuration class to trigger retries on 502, 503 and 504 (or
- * others by using {@link #RetryOnStatusErrorDecoder(Collection)}, not just by default on
- * {@link IOException}.
+ * others by using {@link #RetryOnStatusErrorDecoder(Collection)}, not just by default on {@link
+ * IOException}.
  */
 @SuppressWarnings("unused")
 public class RetryOnStatusErrorDecoder implements ErrorDecoder {
@@ -29,6 +29,10 @@ public class RetryOnStatusErrorDecoder implements ErrorDecoder {
                         HttpStatus.BAD_GATEWAY,
                         HttpStatus.SERVICE_UNAVAILABLE,
                         HttpStatus.GATEWAY_TIMEOUT);
+    }
+
+    public RetryOnStatusErrorDecoder(final HttpStatusCode... statusCodesToRetry) {
+        this.statusCodesToRetry = Set.of(statusCodesToRetry);
     }
 
     public RetryOnStatusErrorDecoder(final Collection<HttpStatusCode> statusCodesToRetry) {
