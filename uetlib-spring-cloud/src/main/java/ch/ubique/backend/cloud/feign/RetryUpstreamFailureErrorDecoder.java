@@ -11,7 +11,7 @@ import java.util.Collection;
 import java.util.Set;
 
 /**
- * @deprecated since v2.5, use {@link CompoundRetryableErrorDecoder} to get the same behaviour as before
+ * @deprecated since backend-lib v2.5 / uetlib v1.0, use {@link CompoundRetryableErrorDecoder} to get the same behaviour as before
  *     {@snippet :
  * new CompoundRetryableErrorDecoder(
  *      new RetryOnStatusErrorDecoder(), new ErrorDecoder.Default())
