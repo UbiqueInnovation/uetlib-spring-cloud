@@ -1,4 +1,4 @@
-# Uetlib Monitoring
+# Uetlib Spring Cloud
 
 Spring Cloud specific helpers 
 
