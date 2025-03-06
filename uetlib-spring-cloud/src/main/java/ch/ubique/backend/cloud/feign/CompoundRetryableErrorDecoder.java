@@ -21,8 +21,6 @@ public class CompoundRetryableErrorDecoder implements ErrorDecoder {
 
     @Override
     public Exception decode(final String methodKey, final Response response) {
-        new CompoundRetryableErrorDecoder(
-                new RetryOnStatusErrorDecoder(), new ErrorDecoder.Default());
         for (final var errorDecoder : errorDecoders) {
             final var decodedException = errorDecoder.decode(methodKey, response);
             if (decodedException instanceof final RetryableException retryableException) {
