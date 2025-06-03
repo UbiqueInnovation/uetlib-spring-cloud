@@ -1,5 +1,9 @@
 # CHANGELOG
 
+## 1.2.0
+
+- Upgrade Uetlib Parent to 1.2.0
+
 ## 1.1.1
 
 - Include feign-hc5 so Spring Boot Openfeign use the Apache HttpClient5 instead of HTTPUrlConnection vy default
