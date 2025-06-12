@@ -1,5 +1,11 @@
 # CHANGELOG
 
+## 1.2.1
+
+### Improvements
+
+- Latest uetlib dependencies with Spring Boot 3.5 support
+
 ## 1.2.0
 
 - Upgrade Uetlib Parent to 1.2.0
