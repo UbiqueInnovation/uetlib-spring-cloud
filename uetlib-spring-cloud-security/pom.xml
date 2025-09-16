@@ -22,7 +22,7 @@
         <dependency>
             <groupId>ch.ubique</groupId>
             <artifactId>uetlib-spring-boot-security</artifactId>
-            <version>1.4.0</version>
+            <version>1.4.1</version>
         </dependency>
     </dependencies>
 </project>
