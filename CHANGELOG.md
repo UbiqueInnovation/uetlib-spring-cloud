@@ -1,5 +1,12 @@
 # CHANGELOG
 
+## 2.0.0
+
+### Improvements
+
+- Upgrade to Spring Boot 4.0
+- Remove deprecated `RetryUpstreamFailureErrorDecoder`, to be replaced with `RetryOnStatusErrorDecoder`
+
 ## 1.2.1
 
 ### Improvements
