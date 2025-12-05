@@ -24,6 +24,12 @@
         <module>uetlib-spring-cloud-coverage</module>
     </modules>
 
+    <distributionManagement>
+        <repository>
+            <id>ubique-artifactory</id>
+        </repository>
+    </distributionManagement>
+
     <build>
         <plugins>
             <plugin>
@@ -47,14 +53,13 @@
                 <groupId>org.jacoco</groupId>
                 <artifactId>jacoco-maven-plugin</artifactId>
             </plugin>
+
+            <plugin>
+                <groupId>de.westemeyer</groupId>
+                <artifactId>artifact-version-maven-plugin</artifactId>
+            </plugin>
         </plugins>
     </build>
-
-    <distributionManagement>
-        <repository>
-            <id>ubique-artifactory</id>
-        </repository>
-    </distributionManagement>
 
     <scm>
         <url>https://github.com/UbiqueInnovation/uetlib-monitoring</url>
