@@ -7,7 +7,7 @@
     <parent>
         <groupId>ch.ubique</groupId>
         <artifactId>uetlib-parent</artifactId>
-        <version>2026.0.0-SNAPSHOT</version>
+        <version>2026.0.0-alpha.3</version>
     </parent>
 
     <artifactId>uetlib-spring-cloud-parent</artifactId>
@@ -24,42 +24,13 @@
         <module>uetlib-spring-cloud-coverage</module>
     </modules>
 
-    <distributionManagement>
+    <repositories>
         <repository>
-            <id>ubique-artifactory</id>
+            <id>osgeo</id>
+            <name>Open Source Geospatial Foundation Repository</name>
+            <url>https://repo.osgeo.org/repository/release/</url>
         </repository>
-    </distributionManagement>
-
-    <build>
-        <plugins>
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-compiler-plugin</artifactId>
-            </plugin>
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-deploy-plugin</artifactId>
-            </plugin>
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-source-plugin</artifactId>
-            </plugin>
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-surefire-plugin</artifactId>
-            </plugin>
-
-            <plugin>
-                <groupId>org.jacoco</groupId>
-                <artifactId>jacoco-maven-plugin</artifactId>
-            </plugin>
-
-            <plugin>
-                <groupId>de.westemeyer</groupId>
-                <artifactId>artifact-version-maven-plugin</artifactId>
-            </plugin>
-        </plugins>
-    </build>
+    </repositories>
 
     <scm>
         <url>https://github.com/UbiqueInnovation/uetlib-monitoring</url>
