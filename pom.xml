@@ -15,6 +15,7 @@
     <packaging>pom</packaging>
 
     <properties>
+        <sonar.projectName>uetlib-spring-cloud</sonar.projectName>
         <sonar.coverage.module>uetlib-spring-cloud-coverage</sonar.coverage.module>
     </properties>
 
