@@ -7,7 +7,7 @@
     <parent>
         <groupId>ch.ubique</groupId>
         <artifactId>uetlib-parent</artifactId>
-        <version>2026.0.0-alpha.5</version>
+        <version>2026.0.0-alpha.6</version>
     </parent>
 
     <artifactId>uetlib-spring-cloud-parent</artifactId>
@@ -15,6 +15,9 @@
     <packaging>pom</packaging>
 
     <properties>
+        <uetlib-spring-boot.version>2.0.0-alpha.35</uetlib-spring-boot.version>
+        <uetlib-spring-boot-test.version>2.0.0-alpha.4</uetlib-spring-boot-test.version>
+
         <sonar.projectName>uetlib-spring-cloud</sonar.projectName>
         <sonar.coverage.module>uetlib-spring-cloud-coverage</sonar.coverage.module>
     </properties>
@@ -24,6 +27,15 @@
         <module>uetlib-spring-cloud-security</module>
         <module>uetlib-spring-cloud-coverage</module>
     </modules>
+
+    <dependencies>
+        <dependency>
+            <groupId>ch.ubique</groupId>
+            <artifactId>uetlib-spring-boot-test</artifactId>
+            <version>${uetlib-spring-boot-test.version}</version>
+            <scope>test</scope>
+        </dependency>
+    </dependencies>
 
     <repositories>
         <repository>
