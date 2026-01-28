@@ -34,6 +34,6 @@
     </repositories>
 
     <scm>
-        <url>https://github.com/UbiqueInnovation/uetlib-monitoring</url>
+        <url>https://github.com/UbiqueInnovation/uetlib-spring-cloud</url>
     </scm>
 </project>
