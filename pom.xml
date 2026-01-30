@@ -7,7 +7,7 @@
     <parent>
         <groupId>ch.ubique</groupId>
         <artifactId>uetlib-parent</artifactId>
-        <version>2026.0.0-alpha.6</version>
+        <version>2026.0.0-alpha.8</version>
     </parent>
 
     <artifactId>uetlib-spring-cloud-parent</artifactId>
@@ -15,7 +15,7 @@
     <packaging>pom</packaging>
 
     <properties>
-        <uetlib-spring-boot.version>2.0.0-alpha.35</uetlib-spring-boot.version>
+        <uetlib-spring-boot.version>2.0.0-alpha.38</uetlib-spring-boot.version>
         <uetlib-spring-boot-test.version>2.0.0-alpha.4</uetlib-spring-boot-test.version>
 
         <sonar.projectName>uetlib-spring-cloud</sonar.projectName>
