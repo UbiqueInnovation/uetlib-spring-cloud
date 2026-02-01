@@ -15,8 +15,8 @@
     <packaging>pom</packaging>
 
     <properties>
-        <uetlib-spring-boot.version>2.0.0-alpha.38</uetlib-spring-boot.version>
-        <uetlib-spring-boot-test.version>2.0.0-alpha.4</uetlib-spring-boot-test.version>
+        <uetlib-spring-boot.version>2.0.0-alpha.39</uetlib-spring-boot.version>
+        <uetlib-spring-boot-test.version>2.0.0-alpha.5</uetlib-spring-boot-test.version>
 
         <sonar.projectName>uetlib-spring-cloud</sonar.projectName>
         <sonar.coverage.module>uetlib-spring-cloud-coverage</sonar.coverage.module>
