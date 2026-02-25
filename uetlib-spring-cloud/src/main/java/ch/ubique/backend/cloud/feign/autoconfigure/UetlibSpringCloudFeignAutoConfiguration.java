@@ -1,6 +1,6 @@
 package ch.ubique.backend.cloud.feign.autoconfigure;
 
-import ch.ubique.backend.cloud.feign.CustomNamePrefixFeignObservationConvention;
+import ch.ubique.backend.cloud.feign.ExtendedFeignObservationConvention;
 
 import feign.micrometer.MicrometerObservationCapability;
 
@@ -20,6 +20,6 @@ public class UetlibSpringCloudFeignAutoConfiguration {
     MicrometerObservationCapability micrometerObservationCapability(
             final ObservationRegistry observationRegistry) {
         return new MicrometerObservationCapability(
-                observationRegistry, new CustomNamePrefixFeignObservationConvention());
+                observationRegistry, new ExtendedFeignObservationConvention());
     }
 }
