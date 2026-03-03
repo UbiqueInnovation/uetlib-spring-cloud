@@ -1,5 +1,11 @@
 # CHANGELOG
 
+## 2.1.0
+
+- Add new `ExtendedFeignObservationConvention` that is auotconfigured int `UetlibSpringCloudFeignAutoConfiguration`.
+  With this change, all http client metrics from feign client have the new prfix `feign.http.client.requests` instead of
+  just `http.client.requests` in prometheus which conflicts with Spring Boot defaults.
+
 ## 2.0.0
 
 ### Improvements
