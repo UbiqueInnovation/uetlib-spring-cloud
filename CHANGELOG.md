@@ -1,5 +1,9 @@
 # CHANGELOG
 
+## 2.2.0
+
+- Update `uetlib-spring-boot/-security` to `2.1.0`
+
 ## 2.1.0
 
 - Add new `ExtendedFeignObservationConvention` that is auotconfigured int `UetlibSpringCloudFeignAutoConfiguration`.
