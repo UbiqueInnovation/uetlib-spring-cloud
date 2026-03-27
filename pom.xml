@@ -15,7 +15,7 @@
     <packaging>pom</packaging>
 
     <properties>
-        <uetlib-spring-boot.version>2.0.5</uetlib-spring-boot.version>
+        <uetlib-spring-boot.version>2.1.0</uetlib-spring-boot.version>
         <uetlib-spring-boot-test.version>2.0.1</uetlib-spring-boot-test.version>
 
         <sonar.projectName>uetlib-spring-cloud</sonar.projectName>
@@ -38,6 +38,11 @@
     </dependencies>
 
     <repositories>
+        <repository>
+            <id>ubique-artifactory</id>
+            <name>backend</name>
+            <url>https://artifactory.ubique.ch/artifactory/backend</url>
+        </repository>
         <repository>
             <id>osgeo</id>
             <name>Open Source Geospatial Foundation Repository</name>
