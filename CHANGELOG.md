@@ -1,5 +1,11 @@
 # CHANGELOG
 
+## 2.2.1
+
+### Improvements
+
+- Fix `FeignExceptionUtils` to use Jackson 3
+
 ## 2.2.0
 
 - Update `uetlib-spring-boot/-security` to `2.1.0`
