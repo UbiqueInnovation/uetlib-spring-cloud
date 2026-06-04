@@ -1,5 +1,7 @@
 package ch.ubique.backend.spring.cloud.feign.handler;
 
+import static java.util.Objects.requireNonNull;
+
 import ch.ubique.backend.spring.boot.problem.handler.UetlibExceptionHandlerSkeletonTrait;
 
 import feign.FeignException;
@@ -53,7 +55,8 @@ public interface FeignExceptionAdviceTrait extends UetlibExceptionHandlerSkeleto
             final FeignClientException ex, final HttpHeaders headers, final WebRequest request) {
         final var status = resolveStatusCodeOrDefault(ex.status(), HttpStatus.BAD_REQUEST);
         final var body =
-                createProblemDetail(ex, status, ex.getLocalizedMessage(), null, null, request);
+                createProblemDetail(
+                        ex, status, requireNonNull(ex.getLocalizedMessage()), null, null, request);
         return handleExceptionInternal(ex, body, headers, status, request);
     }
 
@@ -76,7 +79,8 @@ public interface FeignExceptionAdviceTrait extends UetlibExceptionHandlerSkeleto
         final var status =
                 resolveStatusCodeOrDefault(ex.status(), HttpStatus.INTERNAL_SERVER_ERROR);
         final var body =
-                createProblemDetail(ex, status, ex.getLocalizedMessage(), null, null, request);
+                createProblemDetail(
+                        ex, status, requireNonNull(ex.getLocalizedMessage()), null, null, request);
         return handleExceptionInternal(ex, body, headers, status, request);
     }
 }

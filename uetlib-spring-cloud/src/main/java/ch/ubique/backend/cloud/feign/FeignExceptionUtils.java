@@ -2,6 +2,8 @@ package ch.ubique.backend.cloud.feign;
 
 import feign.FeignException;
 
+import org.jspecify.annotations.Nullable;
+
 import tools.jackson.core.type.TypeReference;
 import tools.jackson.databind.ObjectMapper;
 import tools.jackson.databind.util.ByteBufferBackedInputStream;
@@ -11,7 +13,7 @@ public final class FeignExceptionUtils {
 
     private FeignExceptionUtils() {}
 
-    public static <T> T readFeignExceptionBody(
+    public static <T> @Nullable T readFeignExceptionBody(
             final FeignException feignException,
             final TypeReference<T> typeReference,
             final ObjectMapper objectMapper) {
