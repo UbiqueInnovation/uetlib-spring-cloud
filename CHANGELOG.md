@@ -1,5 +1,12 @@
 # CHANGELOG
 
+## 2.3.0
+
+### Improvements
+
+- Null-marked it all
+- Update `uetlib-spring-boot/-geo/-security` to `2.2.0`
+
 ## 2.2.1
 
 ### Improvements
