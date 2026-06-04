@@ -15,8 +15,11 @@
     <packaging>pom</packaging>
 
     <properties>
-        <uetlib-spring-boot.version>2.1.1</uetlib-spring-boot.version>
+        <uetlib-spring-boot.version>2.2.0</uetlib-spring-boot.version>
         <uetlib-spring-boot-test.version>2.0.1</uetlib-spring-boot-test.version>
+
+        <!-- westemeyer version config -->
+        <westemeyer-version-package-name>ch.ubique.backend.spring.cloud.version</westemeyer-version-package-name>
 
         <sonar.projectName>uetlib-spring-cloud</sonar.projectName>
         <sonar.coverage.module>uetlib-spring-cloud-coverage</sonar.coverage.module>
