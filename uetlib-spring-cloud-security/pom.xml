@@ -22,7 +22,6 @@
         <dependency>
             <groupId>ch.ubique</groupId>
             <artifactId>uetlib-spring-boot-security</artifactId>
-            <version>${uetlib-spring-boot.version}</version>
         </dependency>
     </dependencies>
 </project>

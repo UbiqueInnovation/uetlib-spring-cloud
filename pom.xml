@@ -15,9 +15,6 @@
     <packaging>pom</packaging>
 
     <properties>
-        <uetlib-spring-boot.version>2.5.0</uetlib-spring-boot.version>
-        <uetlib-spring-boot-test.version>2.1.0</uetlib-spring-boot-test.version>
-
         <!-- westemeyer version config -->
         <westemeyer-version-package-name>ch.ubique.backend.spring.cloud.version</westemeyer-version-package-name>
 
@@ -35,10 +32,31 @@
         <dependency>
             <groupId>ch.ubique</groupId>
             <artifactId>uetlib-spring-boot-test</artifactId>
-            <version>${uetlib-spring-boot-test.version}</version>
             <scope>test</scope>
         </dependency>
     </dependencies>
+
+    <dependencyManagement>
+        <dependencies>
+            <dependency>
+                <groupId>ch.ubique</groupId>
+                <artifactId>uetlib-spring-boot</artifactId>
+                <version>2.5.0</version>
+            </dependency>
+            <dependency>
+                <groupId>ch.ubique</groupId>
+                <artifactId>uetlib-spring-boot-security</artifactId>
+                <version>2.5.0</version>
+            </dependency>
+
+            <dependency>
+                <groupId>ch.ubique</groupId>
+                <artifactId>uetlib-spring-boot-test</artifactId>
+                <version>2.1.0</version>
+                <scope>test</scope>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
 
     <repositories>
         <repository>
