@@ -1,5 +1,16 @@
 # CHANGELOG
 
+## 2.3.1
+
+### Bugfixes
+
+- AutoConfiguration class moved to correct place in resources dir (`UetlibSpringCloudAutoConfiguration` was completely
+  ignored)
+
+### Improvements
+
+- uetlib and actions version updates
+
 ## 2.3.0
 
 ### Improvements
