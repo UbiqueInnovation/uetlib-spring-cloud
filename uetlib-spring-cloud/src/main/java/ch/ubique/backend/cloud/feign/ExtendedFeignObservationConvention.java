@@ -11,7 +11,6 @@ import feign.micrometer.FeignContext;
 import io.micrometer.common.KeyValues;
 import io.micrometer.common.docs.KeyName;
 
-import org.jspecify.annotations.NonNull;
 import org.jspecify.annotations.Nullable;
 import org.springframework.web.util.UriComponentsBuilder;
 
@@ -40,16 +39,14 @@ import org.springframework.web.util.UriComponentsBuilder;
 public final class ExtendedFeignObservationConvention extends DefaultFeignObservationConvention {
 
     private static final String UNKNOWN = "UNKNOWN";
-    private static final String NAME =
-            "feign." + DefaultFeignObservationConvention.INSTANCE.getName();
 
     @Override
     public String getName() {
-        return NAME;
+        return "feign." + super.getName();
     }
 
     @Override
-    public @NonNull KeyValues getLowCardinalityKeyValues(final FeignContext context) {
+    public KeyValues getLowCardinalityKeyValues(final FeignContext context) {
         final var requestTemplate = requireNonNull(context.getCarrier()).requestTemplate();
         final var superKeyValues = super.getLowCardinalityKeyValues(context);
 
@@ -64,7 +61,6 @@ public final class ExtendedFeignObservationConvention extends DefaultFeignObserv
         return superKeyValues.and(additionalKeyValues);
     }
 
-    @NonNull
     private String getTargetUrl(@Nullable final RequestTemplate requestTemplate) {
         if (requestTemplate == null) {
             return UNKNOWN;
@@ -83,8 +79,7 @@ public final class ExtendedFeignObservationConvention extends DefaultFeignObserv
         return url;
     }
 
-    @NonNull
-    private String extractHostPort(@NonNull final String url) {
+    private String extractHostPort(final String url) {
         final var uriComponents = UriComponentsBuilder.fromUriString(url).build();
         final var host = requireNonNull(uriComponents.getHost());
         final var port = uriComponents.getPort();
@@ -94,13 +89,13 @@ public final class ExtendedFeignObservationConvention extends DefaultFeignObserv
     enum AdditionalClientTags implements KeyName {
         BASE_URL {
             @Override
-            public @NonNull String asString() {
+            public String asString() {
                 return "http.base_url";
             }
         },
         TARGET {
             @Override
-            public @NonNull String asString() {
+            public String asString() {
                 return "http.target";
             }
         }
