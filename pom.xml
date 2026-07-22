@@ -48,7 +48,6 @@
                 <artifactId>uetlib-spring-boot-security</artifactId>
                 <version>2.5.0</version>
             </dependency>
-
             <dependency>
                 <groupId>ch.ubique</groupId>
                 <artifactId>uetlib-spring-boot-test</artifactId>
