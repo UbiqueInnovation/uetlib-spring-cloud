@@ -13,7 +13,7 @@
     <artifactId>uetlib-spring-cloud-coverage</artifactId>
     <packaging>jar</packaging>
 
-        <dependencyManagement>
+    <dependencyManagement>
         <dependencies>
             <dependency>
                 <groupId>ch.ubique</groupId>
@@ -28,7 +28,7 @@
         </dependencies>
     </dependencyManagement>
 
-<dependencies>
+    <dependencies>
         <dependency>
             <groupId>ch.ubique</groupId>
             <artifactId>uetlib-spring-cloud</artifactId>
