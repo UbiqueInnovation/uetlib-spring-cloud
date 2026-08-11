@@ -3,6 +3,9 @@
 ## 2.4.0
 
 - Add `org.zalando:logbook-openfeign` to `uetlib-spring-cloud`
+- update actions
+- update uetlib parent and versions
+- Java 25
 
 ## 2.3.2
 
