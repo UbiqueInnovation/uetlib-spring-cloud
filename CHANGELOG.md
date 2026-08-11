@@ -1,5 +1,9 @@
 # CHANGELOG
 
+## 2.4.0
+
+- Add `org.zalando:logbook-openfeign` to `uetlib-spring-cloud`
+
 ## 2.3.2
 
 - updated actions to not run tests twice for sonar
