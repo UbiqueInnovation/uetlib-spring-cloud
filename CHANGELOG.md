@@ -1,5 +1,10 @@
 # CHANGELOG
 
+## 2.4.1
+
+- latest uetlib parent
+- version updates
+
 ## 2.4.0
 
 - Add `org.zalando:logbook-openfeign` to `uetlib-spring-cloud`
