@@ -80,3 +80,5 @@ fabric.properties
 /uetlib/uetlib-geo/src/test/resources/gdal/gdal_ww_test_output.tif
 
 **/.claude
+
+.sonar/
