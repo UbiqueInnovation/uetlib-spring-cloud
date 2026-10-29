@@ -7,12 +7,12 @@
     <parent>
         <groupId>ch.ubique.uetlib</groupId>
         <artifactId>uetlib-parent</artifactId>
-        <version>2026.10.1</version>
+        <version>2026.11.0</version>
         <relativePath/>
     </parent>
 
     <artifactId>uetlib-spring-cloud-parent</artifactId>
-    <version>3.0.0-SNAPSHOT</version>
+    <version>4.0.0-SNAPSHOT</version>
     <packaging>pom</packaging>
 
     <properties>
@@ -39,17 +39,17 @@
             <dependency>
                 <groupId>ch.ubique.uetlib</groupId>
                 <artifactId>uetlib-spring-boot</artifactId>
-                <version>3.3.0</version>
+                <version>4.0.0</version>
             </dependency>
             <dependency>
                 <groupId>ch.ubique.uetlib</groupId>
                 <artifactId>uetlib-spring-boot-security</artifactId>
-                <version>3.3.0</version>
+                <version>4.0.0</version>
             </dependency>
             <dependency>
                 <groupId>ch.ubique.uetlib</groupId>
                 <artifactId>uetlib-spring-boot-test</artifactId>
-                <version>2.1.2</version>
+                <version>3.0.0</version>
                 <scope>test</scope>
             </dependency>
         </dependencies>
