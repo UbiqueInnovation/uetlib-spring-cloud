@@ -1,11 +1,8 @@
-package ch.ubique.backend.cloud.feign.autoconfigure;
+package ch.ubique.uetlib.cloud.feign.autoconfigure;
 
-import ch.ubique.backend.cloud.feign.ExtendedFeignObservationConvention;
-
+import ch.ubique.uetlib.cloud.feign.ExtendedFeignObservationConvention;
 import feign.micrometer.MicrometerObservationCapability;
-
 import io.micrometer.observation.ObservationRegistry;
-
 import org.springframework.boot.autoconfigure.AutoConfiguration;
 import org.springframework.boot.autoconfigure.condition.ConditionalOnBean;
 import org.springframework.boot.autoconfigure.condition.ConditionalOnMissingBean;

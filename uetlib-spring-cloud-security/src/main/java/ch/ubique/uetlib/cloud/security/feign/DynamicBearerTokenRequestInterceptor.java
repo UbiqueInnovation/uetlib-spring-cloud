@@ -1,8 +1,7 @@
-package ch.ubique.backend.cloud.security.feign;
+package ch.ubique.uetlib.cloud.security.feign;
 
-import ch.ubique.backend.cloud.feign.BearerTokenRequestInterceptor;
-import ch.ubique.backend.security.JwtUtil;
-
+import ch.ubique.uetlib.cloud.feign.BearerTokenRequestInterceptor;
+import ch.ubique.uetlib.security.JwtUtil;
 import feign.RequestTemplate;
 
 @SuppressWarnings("unused")

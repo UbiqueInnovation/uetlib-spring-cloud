@@ -1,4 +1,4 @@
 @NullMarked
-package ch.ubique.backend.cloud.security.feign;
+package ch.ubique.uetlib.cloud.feign;
 
 import org.jspecify.annotations.NullMarked;
