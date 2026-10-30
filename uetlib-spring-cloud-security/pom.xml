@@ -13,6 +13,10 @@
     <artifactId>uetlib-spring-cloud-security</artifactId>
     <packaging>jar</packaging>
 
+    <name>uetlib-spring-cloud-security</name>
+    <description>Spring Cloud integrations for uetlib applications.</description>
+    <url>https://github.com/UbiqueInnovation/uetlib-spring-cloud</url>
+
     <dependencyManagement>
         <dependencies>
             <dependency>
