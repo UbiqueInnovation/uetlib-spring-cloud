@@ -2,6 +2,8 @@
 
 ## 3.0.0 (unreleased)
 
+- Align Feign and security integration packages under `ch.ubique.uetlib.spring.cloud.*`.
+
 ### Breaking changes
 
 - Move Java packages from `ch.ubique.backend` to `ch.ubique.uetlib`, including class-name resources. Existing Spring configuration property keys are unchanged.

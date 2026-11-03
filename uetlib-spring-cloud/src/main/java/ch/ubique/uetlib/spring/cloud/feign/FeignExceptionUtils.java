@@ -1,7 +1,9 @@
-package ch.ubique.uetlib.cloud.feign;
+package ch.ubique.uetlib.spring.cloud.feign;
 
 import feign.FeignException;
+
 import org.jspecify.annotations.Nullable;
+
 import tools.jackson.core.type.TypeReference;
 import tools.jackson.databind.ObjectMapper;
 import tools.jackson.databind.util.ByteBufferBackedInputStream;

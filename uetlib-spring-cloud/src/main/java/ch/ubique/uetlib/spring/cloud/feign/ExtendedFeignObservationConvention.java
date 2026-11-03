@@ -1,13 +1,16 @@
-package ch.ubique.uetlib.cloud.feign;
+package ch.ubique.uetlib.spring.cloud.feign;
+
+import static org.apache.commons.lang3.StringUtils.isBlank;
 
 import static java.util.Objects.requireNonNull;
-import static org.apache.commons.lang3.StringUtils.isBlank;
 
 import feign.RequestTemplate;
 import feign.micrometer.DefaultFeignObservationConvention;
 import feign.micrometer.FeignContext;
+
 import io.micrometer.common.KeyValues;
 import io.micrometer.common.docs.KeyName;
+
 import org.jspecify.annotations.Nullable;
 import org.springframework.web.util.UriComponentsBuilder;
 

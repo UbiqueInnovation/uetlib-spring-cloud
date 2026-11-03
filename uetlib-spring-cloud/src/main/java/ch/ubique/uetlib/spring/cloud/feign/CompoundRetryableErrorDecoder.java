@@ -1,10 +1,11 @@
-package ch.ubique.uetlib.cloud.feign;
+package ch.ubique.uetlib.spring.cloud.feign;
 
 import static feign.FeignException.errorStatus;
 
 import feign.Response;
 import feign.RetryableException;
 import feign.codec.ErrorDecoder;
+
 import java.util.List;
 
 public class CompoundRetryableErrorDecoder implements ErrorDecoder {
