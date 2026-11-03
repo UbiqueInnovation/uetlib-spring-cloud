@@ -1,7 +1,8 @@
-package ch.ubique.uetlib.cloud.security.feign;
+package ch.ubique.uetlib.spring.cloud.security.feign;
 
-import ch.ubique.uetlib.cloud.feign.BearerTokenRequestInterceptor;
-import ch.ubique.uetlib.security.JwtUtil;
+import ch.ubique.uetlib.spring.boot.security.JwtUtil;
+import ch.ubique.uetlib.spring.cloud.feign.BearerTokenRequestInterceptor;
+
 import feign.RequestTemplate;
 
 @SuppressWarnings("unused")

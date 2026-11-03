@@ -1,4 +1,4 @@
-package ch.ubique.uetlib.cloud.feign;
+package ch.ubique.uetlib.spring.cloud.feign;
 
 import feign.RequestInterceptor;
 import feign.RequestTemplate;

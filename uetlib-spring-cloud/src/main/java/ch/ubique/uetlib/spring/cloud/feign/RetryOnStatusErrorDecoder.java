@@ -1,15 +1,17 @@
-package ch.ubique.uetlib.cloud.feign;
+package ch.ubique.uetlib.spring.cloud.feign;
 
 import static feign.FeignException.errorStatus;
 
 import feign.Response;
 import feign.RetryableException;
 import feign.codec.ErrorDecoder;
+
+import org.springframework.http.HttpStatus;
+import org.springframework.http.HttpStatusCode;
+
 import java.io.IOException;
 import java.util.Collection;
 import java.util.Set;
-import org.springframework.http.HttpStatus;
-import org.springframework.http.HttpStatusCode;
 
 /**
  * Add this as a bean to a feign configuration class to trigger retries on 502, 503 and 504 (or

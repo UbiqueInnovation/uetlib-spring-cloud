@@ -17,6 +17,10 @@
     <description>Spring Cloud integrations for uetlib applications.</description>
     <url>https://github.com/UbiqueInnovation/uetlib-spring-cloud</url>
 
+    <properties>
+        <central.publishing.skip>true</central.publishing.skip>
+    </properties>
+
     <dependencyManagement>
         <dependencies>
             <dependency>
