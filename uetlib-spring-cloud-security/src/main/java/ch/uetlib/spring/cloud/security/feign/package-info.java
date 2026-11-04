@@ -1,4 +1,4 @@
 @NullMarked
-package ch.ubique.uetlib.spring.cloud.feign;
+package ch.uetlib.spring.cloud.security.feign;
 
 import org.jspecify.annotations.NullMarked;
