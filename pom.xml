@@ -61,12 +61,12 @@
             <dependency>
                 <groupId>ch.uetlib</groupId>
                 <artifactId>uetlib-spring-boot</artifactId>
-                <version>4.0.0</version>
+                <version>4.0.1</version>
             </dependency>
             <dependency>
                 <groupId>ch.uetlib</groupId>
                 <artifactId>uetlib-spring-boot-security</artifactId>
-                <version>4.0.0</version>
+                <version>4.0.1</version>
             </dependency>
             <dependency>
                 <groupId>ch.uetlib</groupId>
