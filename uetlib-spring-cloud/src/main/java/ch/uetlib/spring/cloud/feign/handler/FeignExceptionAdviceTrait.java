@@ -1,8 +1,8 @@
-package ch.ubique.backend.spring.cloud.feign.handler;
+package ch.uetlib.spring.cloud.feign.handler;
 
 import static java.util.Objects.requireNonNull;
 
-import ch.ubique.backend.spring.boot.problem.handler.UetlibExceptionHandlerSkeletonTrait;
+import ch.uetlib.spring.boot.problem.handler.UetlibExceptionHandlerSkeletonTrait;
 
 import feign.FeignException;
 import feign.FeignException.FeignClientException;

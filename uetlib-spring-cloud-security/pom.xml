@@ -5,18 +5,22 @@
     <modelVersion>4.0.0</modelVersion>
 
     <parent>
-        <groupId>ch.ubique</groupId>
+        <groupId>ch.uetlib</groupId>
         <artifactId>uetlib-spring-cloud-parent</artifactId>
-        <version>3.0.0-SNAPSHOT</version>
+        <version>4.0.0-SNAPSHOT</version>
     </parent>
 
     <artifactId>uetlib-spring-cloud-security</artifactId>
     <packaging>jar</packaging>
 
+    <name>uetlib-spring-cloud-security</name>
+    <description>Spring Cloud integrations for uetlib applications.</description>
+    <url>https://github.com/UbiqueInnovation/uetlib-spring-cloud</url>
+
     <dependencyManagement>
         <dependencies>
             <dependency>
-                <groupId>ch.ubique</groupId>
+                <groupId>ch.uetlib</groupId>
                 <artifactId>uetlib-spring-cloud</artifactId>
                 <version>${project.version}</version>
             </dependency>
@@ -25,11 +29,11 @@
 
     <dependencies>
         <dependency>
-            <groupId>ch.ubique</groupId>
+            <groupId>ch.uetlib</groupId>
             <artifactId>uetlib-spring-cloud</artifactId>
         </dependency>
         <dependency>
-            <groupId>ch.ubique</groupId>
+            <groupId>ch.uetlib</groupId>
             <artifactId>uetlib-spring-boot-security</artifactId>
         </dependency>
     </dependencies>

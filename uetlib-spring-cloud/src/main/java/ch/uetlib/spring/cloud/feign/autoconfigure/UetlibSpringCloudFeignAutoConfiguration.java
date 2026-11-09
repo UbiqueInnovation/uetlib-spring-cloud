@@ -1,6 +1,6 @@
-package ch.ubique.backend.cloud.feign.autoconfigure;
+package ch.uetlib.spring.cloud.feign.autoconfigure;
 
-import ch.ubique.backend.cloud.feign.ExtendedFeignObservationConvention;
+import ch.uetlib.spring.cloud.feign.ExtendedFeignObservationConvention;
 
 import feign.micrometer.MicrometerObservationCapability;
 

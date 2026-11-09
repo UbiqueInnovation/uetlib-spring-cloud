@@ -1,7 +1,7 @@
-package ch.ubique.backend.cloud.security.feign;
+package ch.uetlib.spring.cloud.security.feign;
 
-import ch.ubique.backend.cloud.feign.BearerTokenRequestInterceptor;
-import ch.ubique.backend.security.JwtUtil;
+import ch.uetlib.spring.boot.security.JwtUtil;
+import ch.uetlib.spring.cloud.feign.BearerTokenRequestInterceptor;
 
 import feign.RequestTemplate;
 
