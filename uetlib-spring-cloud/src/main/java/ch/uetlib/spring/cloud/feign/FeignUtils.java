@@ -1,4 +1,4 @@
-package ch.ubique.backend.cloud.feign;
+package ch.uetlib.spring.cloud.feign;
 
 import com.pivovarit.function.exception.WrappedException;
 
