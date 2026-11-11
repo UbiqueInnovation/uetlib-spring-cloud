@@ -2,10 +2,6 @@
 
 ## 3.0.1
 
-- Update shared Maven build and publish workflows to v0.2.4.
-
-## 3.0.0
-
 - Move Java packages and class references from `ch.ubique.uetlib` to `ch.uetlib`.
 
 - Align Feign and security integration packages under `ch.uetlib.spring.cloud.*`.
