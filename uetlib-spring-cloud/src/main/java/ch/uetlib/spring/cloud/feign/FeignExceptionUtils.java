@@ -19,12 +19,11 @@ public final class FeignExceptionUtils {
             final ObjectMapper objectMapper) {
         return feignException
                 .responseBody()
-                .map(
-                        body -> {
-                            try (final var inputStream = new ByteBufferBackedInputStream(body)) {
-                                return objectMapper.readValue(inputStream, typeReference);
-                            }
-                        })
+                .map(body -> {
+                    try (final var inputStream = new ByteBufferBackedInputStream(body)) {
+                        return objectMapper.readValue(inputStream, typeReference);
+                    }
+                })
                 .orElse(null);
     }
 }
